@@ -24,9 +24,9 @@ while player1.life_points > 0 && player2.life_points >0 do
   puts "\n"
   puts ">>>Passons à la phase d'attaque : "
   puts "\n"
-  player1.attacks(player2)
+  player1.attack(player2)
    break if player2.life_points <= 0 # on arrête la boucle si le joueur est KO
-  player2.attacks(player1)
+  player2.attack(player1)
   puts "\n"
 end
 
